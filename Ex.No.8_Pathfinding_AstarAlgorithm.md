@@ -1,6 +1,6 @@
 # Ex.No: 8  Implementation of Path finding using A* algorithm
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:  07/08/2026                                                                          
+### REGISTER NUMBER : 212224243007
 ### AIM: 
 To write a program to create graph using waypoints and use A* algorithm to find path between source and destination.
 ### Algorithm:
@@ -16,8 +16,8 @@ To write a program to create graph using waypoints and use A* algorithm to find 
 8. Create a Game Object for Player ( choose capsule or any others) and attach the script to move player from start to end waypoints
 ```  
 ### Program:
-```
 **#1.Waypoint.cs**
+```
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -34,7 +34,9 @@ public class Waypoint : MonoBehaviour {
         }
     }
 }
+```
 **#2. WaypointGraph.cs**
+```
 using UnityEngine;
 
 public class WaypointGraph : MonoBehaviour {
@@ -44,7 +46,9 @@ public class WaypointGraph : MonoBehaviour {
         allWaypoints = FindObjectsOfType<Waypoint>();
     }
 }
+```
 **#3.Pathfinding.cs**
+```
 using System.Collections.Generic;
 using UnityEngine;
 public class Pathfinding : MonoBehaviour {
@@ -103,8 +107,9 @@ public class Pathfinding : MonoBehaviour {
         return path;
     }
 }
-
+```
 **#4.AICharacter.cs**
+```
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -131,12 +136,23 @@ public class AICharacter : MonoBehaviour {
         }
     }
 }
+```
+
 Check the following
 1. Waypoints placed in scene
 2. Neighbors set manually via Inspector
 3. WaypointGraph script on a manager
 4. AICharacter assigned a start and goal
 ### Output:
+
+<img width="1919" height="1145" alt="Screenshot 2026-08-07 140707" src="https://github.com/user-attachments/assets/c59ac866-381e-45e5-aa8e-a0a0f5e4d789" />
+
+<img width="1919" height="1142" alt="Screenshot 2026-08-07 140817" src="https://github.com/user-attachments/assets/8670c604-06b3-48bb-9c81-01d6960172f0" />
+
+<img width="1919" height="1132" alt="Screenshot 2026-08-07 140729" src="https://github.com/user-attachments/assets/be0c99e0-8a4b-4f3d-9ea5-b1a4505305f9" />
+
+<img width="1919" height="1136" alt="Screenshot 2026-08-07 140833" src="https://github.com/user-attachments/assets/f405af9d-3cd2-4710-8f17-af840e494214" />
+
 
 
 
