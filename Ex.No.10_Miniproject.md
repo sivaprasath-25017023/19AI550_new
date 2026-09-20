@@ -1,5 +1,5 @@
 # Ex.No: 10  Implementation of 2D/3D game -------------------
-### DATE: 15.09.2026                                                            
+### DATE: 20.09.2026                                                            
 ### REGISTER NUMBER : 212224243007
 ### AIM: 
 To develop a Coin Collector 2D Game in Unity
